@@ -1,4 +1,5 @@
 Sistema de Backlog
+
 Este projeto é um Sistema de Backlog desenvolvido como parte do Trabalho de Conclusão de Curso (TCC) da pós-graduação em Desenvolvimento Fullstack. O sistema foi criado para facilitar o gerenciamento de tickets e o acompanhamento de solicitações, com funcionalidades específicas para avaliação pelo orientador.
 
 Funcionalidades
