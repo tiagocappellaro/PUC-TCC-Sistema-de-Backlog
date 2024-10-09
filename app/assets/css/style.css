@@ -1,0 +1,279 @@
+/* assets/css/style.css */
+
+body {
+    background-color: #f7f7f7;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    font-weight: bold;
+}
+
+.btn-info:hover {
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    font-weight: bold;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.modal-header {
+    background-color: #1DB954;
+    color: white;
+}
+
+th {
+    text-align: center; /* Centraliza os cabeçalhos da tabela */
+}
+
+/* Estilo específico para a página de login */
+.login-body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1DB954, #0a7f3d);
+}
+
+/* Container que envolve o conteúdo da página de login */
+.login-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Título BACKLOG */
+.login-header {
+    text-align: center;
+    margin-bottom: 30px; /* Espaçamento entre o título e o quadro de login */
+    animation: fadeInDown 1s ease-in-out; /* Aplicando a animação ao contêiner do título */
+}
+
+.login-header h1 {
+    font-size: 4rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+/* Estilizando o container de login */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #ffffff; /* Fundo branco do formulário */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* Estilizando os campos de input */
+.form-control {
+    height: 45px;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #1DB954;
+    box-shadow: 0 0 10px rgba(29, 185, 84, 0.15);
+    outline: none;
+}
+
+/* Estilo do botão de login */
+.btn-login {
+    background: linear-gradient(135deg, #1DB954, #0a7f3d);
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-login:hover {
+    background: linear-gradient(135deg, #159f3c, #086f32);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilizando mensagens de erro */
+.alert-danger {
+    color: #d9534f;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+/* Animação ao carregar a página */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .login-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+}
+
+.navbar-nav .btn {
+    font-size: 16px; /* Aumenta o tamanho da fonte dos botões */
+    padding: 10px 20px; /* Aumenta o padding para maior visibilidade */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra para destaque */
+}
+
+#detalhesAnexos div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+/* Customização do botão Histórico */
+.btn-historico {
+    background-color: #28a745; /* Verde */
+    border-color: #28a745;
+    color: white;
+}
+
+.btn-historico:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Alinhamento dos campos Complexidade, Relevancia e Impacto */
+.form-row .form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+/* Drop Area para Anexos */
+#novoTicket-drop-area,
+#detalhes-drop-area {
+    border: 2px dashed #1DB954;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#novoTicket-drop-area.active,
+#detalhes-drop-area.active {
+    background-color: rgba(29, 185, 84, 0.2); /* Altera a cor de fundo ao arrastar */
+}
+
+#novoTicket-file-list,
+#detalhes-file-list {
+    margin-top: 10px;
+}
+
+/* Estilizando o Tooltip */
+.tooltip-inner {
+    background-color: #1DB954 !important;  /* Cor de fundo do tooltip */
+    color: white !important;               /* Cor do texto */
+    font-size: 14px;                       /* Tamanho da fonte */
+    padding: 10px;                         /* Espaçamento interno */
+    border-radius: 10px;                   /* Borda arredondada */
+    border: 2px solid #0b8b3d !important;  /* Borda verde mais forte */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilizando a seta do Tooltip com borda verde */
+.bs-tooltip-top .tooltip-arrow::before,
+.bs-tooltip-bottom .tooltip-arrow::before,
+.bs-tooltip-left .tooltip-arrow::before,
+.bs-tooltip-right .tooltip-arrow::before {
+    background-color: #1DB954; /* Cor de fundo da seta */
+}
+
+/* Personalizando o tamanho e estilo da seta do Tooltip */
+.tooltip .arrow::before {
+    border-color: transparent; /* Remover a borda padrão */
+    border-width: 10px;        /* Tamanho da seta */
+}
+
+/* Cor da seta para cada direção */
+.bs-tooltip-top .arrow::before {
+    border-top-color: #1DB954; /* Cor da seta no topo */
+}
+.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #1DB954; /* Cor da seta na parte inferior */
+}
+.bs-tooltip-left .arrow::before {
+    border-left-color: #1DB954; /* Cor da seta à esquerda */
+}
+.bs-tooltip-right .arrow::before {
+    border-right-color: #1DB954; /* Cor da seta à direita */
+}
