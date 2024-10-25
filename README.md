@@ -16,6 +16,5 @@ Pré-requisitos
 Antes de iniciar o setup, certifique-se de ter instalado:
 
 - PHP 7.4 ou superior
-- MySQL
-- Composer
+- MySQL / MariaDB
 - Servidor web (Apache, Nginx, etc.)
